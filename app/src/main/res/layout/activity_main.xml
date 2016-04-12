@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.randybiglow.fantasyfootball.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Fantasy Football"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:textColor="#1b186c"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:hint="Enter Player Name"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addTextButton"
+        android:text="Add"
+        android:textColor="#23971f"
+        android:layout_below="@id/editText"
+        android:layout_marginLeft="70dp"
+        android:background="@drawable/custom_buttons"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/removeTextButton"
+        android:text="Remove"
+        android:textColor="#ac2e1b"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/editText"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/custom_buttons"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@id/removeTextButton">
+    </ListView>
+
+</RelativeLayout>
